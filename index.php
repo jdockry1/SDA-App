@@ -71,6 +71,7 @@
 				</ul>
 			</burger>
 		</header>
+		<div class="all-projects-section">
         <div class="container">
 			<!--<div class="carousel-container">
 				<ul class="carousel">
@@ -166,7 +167,15 @@
 					</div>
 				</div>
 			</div>
-        </div>
+		</div>
+		</div>
+		<div class="all-images-section">
+			<div class="all-images-button">
+				ALL IMAGES
+			</div>
+			<div class="all-images-image">
+			</div>
+		</div>
         <footer>
 			<div class="footer-title">
 				Sea&#769;n Dockry and Associates

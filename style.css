@@ -7,7 +7,7 @@ body {
     margin: 0;
     padding: 0;
     /*padding-top: 120px;*/
-    padding-top: 75px;
+    /*padding-top: 75px;*/
     font-family: 'Helvetica Neue', Helvetica, Arial;
     background-color: rgb(245, 245, 245);
     overflow-x: hidden;
@@ -20,9 +20,9 @@ header {
     width: 100%;
     height: 120px;
     background-color: rgb(60, 60, 60);
-    -moz-box-shadow:    2px 2px 3px 3px #ccc;
-    -webkit-box-shadow: 2px 2px 3px 3px #ccc;
-    box-shadow:         2px 2px 3px 3px #ccc;
+    -webkit-box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.75);
 }
 
 logo {
@@ -379,7 +379,8 @@ burger input:checked ~ ul {
 
 .container {
     /*margin: 1.5% 10% 5% 10%;*/
-    margin: 0% 10% 8% 10%;
+    margin: 0% 10% 0% 10%;
+    padding-top: 75px;
 }
 @media only screen and (min-width : 700px) {
     .container.project-container {
@@ -2093,6 +2094,58 @@ footer {
 
 
 
+
+
+
+
+
+
+.all-projects-section {
+    min-height: 100vh;
+}
+
+.all-images-section {
+    position: relative;
+    min-height: 100vh;
+    background-color: #252525;
+    justify-content: center;
+    display: flex;
+}
+
+.all-images-image {
+    z-index: 0;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    height: 80%;
+    width: 100%;
+    background-image: url(projects/houses/house-in-kinvara/images/image-2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 0.4s;
+    filter: grayscale(100%) brightness(50%);
+}
+
+.all-images-button {
+    z-index: 5;
+    padding:10px 100px;
+    border:2px solid rgb(247, 247, 247);
+    color:rgb(247, 247, 247);
+    font-size:30px;
+    text-decoration:none;
+    transition: all 0.4s;
+    margin: auto;
+    letter-spacing: 5px;
+    transform: scale(0.9);
+}
+.all-images-button:hover {
+    transform: scale(1);
+}
+.all-images-button:hover + .all-images-image {
+    filter: grayscale(0%) brightness(100%);
+}
 
 
 
